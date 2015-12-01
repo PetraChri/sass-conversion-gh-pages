@@ -1,0 +1,8 @@
+@mixin Spaces ($columns, $space, $width) {
+    width: ($width - $space * ($columns - 1)) / $columns;
+    margin-left: $space;
+        
+    &:first-child {
+        margin-left: 0;
+        }
+}
